@@ -1,6 +1,4 @@
-Absolutely! Here's a refined GitHub README.md documentation based on your Flutter project, incorporating best practices and clear explanations:
 
-```markdown
 # Tani Maju: Tugas Pemrograman Mobile 08PT6
 
 ## Project Overview
@@ -96,6 +94,3 @@ This project is licensed under the [MIT License](LICENSE).
 * **Clearer project overview**
 * **Additional Information**
 * **Contributing and Licensing**
-
-
-Let me know if you have any other questions or would like further customization of the README!
