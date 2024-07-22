@@ -1,11 +1,19 @@
+**README.md**
 
-# Tani Maju: Tugas Pemrograman Mobile 08PT6
+# Tani Maju: Aplikasi Pertanian Flutter
 
-## Project Overview
+## Deskripsi Proyek
 
-This Flutter app showcases information about agricultural products and the members of the "Kelompok Pertanian". It provides a user-friendly interface with two viewing options: list and grid.
+Tani Maju adalah aplikasi Flutter yang dirancang untuk membantu para petani dalam mengelola pertanian mereka. Aplikasi ini menyediakan informasi tentang berbagai jenis tanaman, tips budidaya, serta cara mengatasi hama dan penyakit.
 
-## Team Members
+## Fitur Utama
+
+* **List View:** Tampilan daftar tanaman untuk melihat informasi sekilas.
+* **Grid View:** Tampilan galeri tanaman untuk memudahkan eksplorasi.
+* **Detail Tanaman:** Informasi lengkap tentang setiap tanaman, termasuk manfaat, cara menanam, hama penyakit, dan cara panen.
+* **Tema Gelap/Terang:** Pilihan tema untuk kenyamanan pengguna.
+
+## Kelompok Pengembang (Pertanian)
 
 * 8020190363 - Eko Kurniawan
 * 8020190151 - M. Bagus Perwira Negara
@@ -14,83 +22,46 @@ This Flutter app showcases information about agricultural products and the membe
 * 8020210065 - Elizabeth Tan
 * 8020210206 - Richelle Leonard
 
-## Features
-
-* **Home Screen:**
-   - Engaging background image of rice fields (sawah_padi.jpg).
-   - Blur effect for visual appeal.
-   - Displays the group name and member list.
-   - Buttons to navigate to list view and grid view.
-* **List View:**
-   - Presents agricultural products in a list format.
-   - Each item shows an image, title, and short description.
-   - Tap an item to see detailed information.
-* **Grid View:**
-   - Presents agricultural products in a grid format.
-   - Each item displays an image and title.
-   - Tap an item to see detailed information.
-* **Detail Screen:**
-   - Shows a larger image, title, and description of the product.
-   - Includes sections for benefits, planting instructions, pest/disease information, and harvest/post-harvest details.
-
-## App Structure
+## Struktur Direktori
 
 ```
 lib/
+├── assets/
+│   ├── images/
+│   │   ├── buah.jpg
+│   │   ├── jagung.jpg
+│   │   ├── padi.jpg
+│   │   ├── sawah_padi.jpg
+│   │   └── sayuran.jpg
 ├── data/
-│   ├── kelompok.dart  // Group information
-│   └── pertanian_items.dart  // Data for agricultural products
+│   ├── kelompok.dart
+│   └── pertanian_items.dart
 ├── screens/
 │   ├── detail_screen.dart
 │   ├── grid_screen.dart
 │   ├── home_screen.dart
-│   └── list_screen.dart
-└── main.dart          // App entry point
+│   ├── list_screen.dart
+│   └── setting_screen.dart
+└── main.dart
 ```
 
-## Getting Started
+## Cara Menjalankan Proyek
 
-1. **Clone the repository:** `git clone <repository_url>`
-2. **Install dependencies:** `flutter pub get`
-3. **Run the app:** `flutter run`
+1. **Prasyarat:** Pastikan Anda telah menginstal Flutter dan Android Studio atau perangkat pengembangan Flutter lainnya.
+2. **Kloning Repositori:**
+   ```bash
+   git clone https://github.com/baper.negara/tani_maju.git
+   ```
+3. **Instal Dependensi:**
+   ```bash
+   cd tani_maju
+   flutter pub get
+   ```
+4. **Jalankan Aplikasi:**
+   ```bash
+   flutter run
+   ```
 
-## Screenshots
+## Kontribusi
 
-**Home Screen**
-
-[Image of Home Screen]
-
-**List View**
-
-[Image of List Screen]
-
-**Grid View**
-
-[Image of Grid Screen]
-
-**Detail Screen**
-
-[Image of Detail Screen]
-
-## Dependencies
-
-* Flutter SDK (see `pubspec.yaml` for specific version)
-
-## Contributing
-
-Feel free to contribute by opening issues or submitting pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). 
-```
-**Key improvements:**
-
-* **Clearer structure:** Sections for team members, features, app structure, and getting started guide.
-* **Visuals:** Placeholder for screenshots to showcase the app's interface.
-* **Conciseness:** Focused on essential information.
-* **Standard practices:** Follows common README conventions.
-* **Correct file referencing**
-* **Clearer project overview**
-* **Additional Information**
-* **Contributing and Licensing**
+Kami sangat terbuka terhadap kontribusi! Jika Anda ingin berkontribusi, silakan lakukan fork repositori ini, buat branch baru, dan kirimkan pull request.
