@@ -1,6 +1,8 @@
 **README.md**
 
 # Tani Maju: Aplikasi Pertanian Flutter
+projek ini adalah tugas perkuliahan mahasiswa kampus Universitas Dinamika Bangsa Jambi
+pengerjaannya 99% menggunakan ChatGPT + Gemini AI
 
 ## Deskripsi Proyek
 
@@ -11,12 +13,13 @@ Tani Maju adalah aplikasi Flutter yang dirancang untuk membantu para petani dala
 * **List View:** Tampilan daftar tanaman untuk melihat informasi sekilas.
 * **Grid View:** Tampilan galeri tanaman untuk memudahkan eksplorasi.
 * **Detail Tanaman:** Informasi lengkap tentang setiap tanaman, termasuk manfaat, cara menanam, hama penyakit, dan cara panen.
+* **Pantauan Cuaca:** Integrasi API HTTPS GET dari data open-meteo, dan mengambil data lokasi gps user 
 * **Tema Gelap/Terang:** Pilihan tema untuk kenyamanan pengguna.
 
 ## Kelompok Pengembang (Pertanian)
 
 * 8020190363 - Eko Kurniawan
-* 8020190151 - M. Bagus Perwira Negara
+* 8020190151 - **M. Bagus Perwira Negara**
 * 8020190357 - Muhammad Raihan
 * 8020190276 - Wahyu Arwinando
 * 8020210065 - Elizabeth Tan
