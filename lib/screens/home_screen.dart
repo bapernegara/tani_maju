@@ -6,6 +6,7 @@ import 'list_screen.dart';
 import 'grid_screen.dart';
 import '../data/kelompok.dart';
 import 'setting_screen.dart';
+import '../screens/cuaca_screens.dart'; // Import screen cuaca
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -86,7 +87,9 @@ class HomeScreen extends StatelessWidget {
                       color: themeModel.isDark ? Colors.white70 : Colors.white,
                     ),
                   ),
-                  const SizedBox(height: 30),
+                  const SizedBox(
+                      height:
+                          40), // Menambahkan jarak antara container kelompok dan tombol
                   Container(
                     width: double.infinity,
                     margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -138,7 +141,8 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 40),
+
+                  const SizedBox(height: 20), // Menambahkan jarak antara tombol
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -152,9 +156,17 @@ class HomeScreen extends StatelessWidget {
                       const SizedBox(width: 20),
                       _buildButton(
                         context,
-                        'Jelajahi',
+                        'Grid Tanaman',
                         Icons.explore,
                         const GridScreen(),
+                        themeModel.isDark,
+                      ),
+                      const SizedBox(width: 30),
+                      _buildButton(
+                        context,
+                        'Cuaca API',
+                        Icons.wb_sunny,
+                        CuacaScreen(),
                         themeModel.isDark,
                       ),
                     ],
