@@ -50,7 +50,7 @@ lib/
 1. **Prasyarat:** Pastikan Anda telah menginstal Flutter dan Android Studio atau perangkat pengembangan Flutter lainnya.
 2. **Kloning Repositori:**
    ```bash
-   git clone https://github.com/baper.negara/tani_maju.git
+   git clone https://github.com/bapernegara/tani_maju.git
    ```
 3. **Instal Dependensi:**
    ```bash
