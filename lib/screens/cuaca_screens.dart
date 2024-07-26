@@ -4,6 +4,8 @@ import 'dart:convert';
 import 'package:intl/intl.dart';
 
 class CuacaScreen extends StatefulWidget {
+  const CuacaScreen({super.key});
+
   @override
   _CuacaScreenState createState() => _CuacaScreenState();
 }
@@ -110,13 +112,13 @@ class _CuacaScreenState extends State<CuacaScreen> {
         title: Text('Cuaca Pertanian - $lokasi'),
         actions: [
           IconButton(
-            icon: Icon(Icons.refresh),
+            icon: const Icon(Icons.refresh),
             onPressed: _ambilDataCuaca,
           ),
         ],
       ),
       body: isLoading
-          ? Center(child: CircularProgressIndicator())
+          ? const Center(child: CircularProgressIndicator())
           : RefreshIndicator(
               onRefresh: _ambilDataCuaca,
               child: Padding(
@@ -126,7 +128,7 @@ class _CuacaScreenState extends State<CuacaScreen> {
                     Text(
                       '${suhu.round()}°C',
                       style:
-                          TextStyle(fontSize: 64, fontWeight: FontWeight.bold),
+                          const TextStyle(fontSize: 64, fontWeight: FontWeight.bold),
                     ),
                     Icon(
                       _getIconCuaca(int.parse(kondisi)),
@@ -134,47 +136,47 @@ class _CuacaScreenState extends State<CuacaScreen> {
                     ),
                     Text(
                       _getDeskripsiCuaca(int.parse(kondisi)),
-                      style: TextStyle(fontSize: 20),
+                      style: const TextStyle(fontSize: 20),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Card(
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Column(
                           children: [
                             ListTile(
-                              leading: Icon(Icons.water_drop),
+                              leading: const Icon(Icons.water_drop),
                               title: Text('Kelembapan: $kelembapan%'),
                             ),
                             ListTile(
-                              leading: Icon(Icons.air),
+                              leading: const Icon(Icons.air),
                               title: Text(
                                   'Kecepatan Angin: ${kecepatanAngin.toStringAsFixed(1)} m/s'),
                             ),
                             ListTile(
-                              leading: Icon(Icons.navigation),
-                              title: Text('Arah Angin: ${arahAngin}°'),
+                              leading: const Icon(Icons.navigation),
+                              title: Text('Arah Angin: $arahAngin°'),
                             ),
                             ListTile(
-                              leading: Icon(Icons.beach_access),
+                              leading: const Icon(Icons.beach_access),
                               title: Text('Indeks UV: $indeksUV'),
                             ),
                             ListTile(
-                              leading: Icon(Icons.compress),
+                              leading: const Icon(Icons.compress),
                               title: Text('Tekanan Udara: $tekananUdara hPa'),
                             ),
                             ListTile(
-                              leading: Icon(Icons.opacity),
+                              leading: const Icon(Icons.opacity),
                               title: Text('Curah Hujan: $curahHujan mm'),
                             ),
                           ],
                         ),
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Text(
                       'Update terakhir: ${DateFormat('dd MMMM yyyy, HH:mm').format(DateTime.now())}',
-                      style: TextStyle(fontSize: 12),
+                      style: const TextStyle(fontSize: 12),
                     ),
                   ],
                 ),

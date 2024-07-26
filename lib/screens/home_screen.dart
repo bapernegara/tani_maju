@@ -166,7 +166,7 @@ class HomeScreen extends StatelessWidget {
                         context,
                         'Cuaca API',
                         Icons.wb_sunny,
-                        CuacaScreen(),
+                        const CuacaScreen(),
                         themeModel.isDark,
                       ),
                     ],
